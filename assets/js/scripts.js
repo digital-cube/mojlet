@@ -40,6 +40,8 @@ $(document).ready(function() {
         $lightbox.find('img').attr('src', src);
         $lightbox.find('img').attr('alt', alt);
         $lightbox.find('img').css(css);
+                $lightbox.find('.modal-dialog').css({'width': $img.width()});
+
     });
     
     $lightbox.on('shown.bs.modal', function (e) {

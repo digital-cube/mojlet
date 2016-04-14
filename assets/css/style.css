@@ -96,9 +96,9 @@
 
    .box p{padding:25px 0 0 0px; font-size: 1.4em;}
   .btn-about{ text-transform: uppercase;padding:5px 10px;background:  #2c465d; text-align: left; color:white;}
-  .about .btn-about {width:120px; }
-  .book .btn-about {width:170px; }
-  //a:hover, .btn-about {width:100px;color:white; }
+  .about .btn-about {width:120px; text-align: center;}
+  .book .btn-about {width:170px; color:white; }
+  //.btn-about:hover, .btn-about {width:100%;color:white; }
   .video{ height: 1000px; background-image:url('./assets/images/header-1.png'); background-size: cover;}
   .gallery{height: 400px; background-color: white;}
   .sponsors{ height:300px;}
