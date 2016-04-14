@@ -8,18 +8,18 @@
   imgList["ref6"] = new Array();
 
 //Set values for each mouse state
-  imgList["ref1"]["out"] = "http://adrenalynmapp.com/news/wp-content/uploads/2016/03/fb.png";
-  imgList["ref1"]["over"] = "http://adrenalynmapp.com/news/wp-content/uploads/2016/03/fb-hover.png";
-  imgList["ref2"]["out"] = "http://adrenalynmapp.com/news/wp-content/uploads/2016/03/gp.png";
-  imgList["ref2"]["over"] = "http://adrenalynmapp.com/news/wp-content/uploads/2016/03/gp-hover.png";
-  imgList["ref3"]["out"] = "http://adrenalynmapp.com/news/wp-content/uploads/2016/03/tw.png";
-  imgList["ref3"]["over"] = "http://adrenalynmapp.com/news/wp-content/uploads/2016/03/tw-hover.png";
-  imgList["ref4"]["out"] = "http://adrenalynmapp.com/news/wp-content/uploads/2016/03/inst.png";
-  imgList["ref4"]["over"] = "http://adrenalynmapp.com/news/wp-content/uploads/2016/03/inst-hover.png"; 
-  imgList["ref5"]["out"] = "http://adrenalynmapp.com/news/wp-content/uploads/2016/03/ln.png";
-  imgList["ref5"]["over"] = "http://adrenalynmapp.com/news/wp-content/uploads/2016/03/ln-hover.png";
-  imgList["ref6"]["out"] = "http://adrenalynmapp.com/news/wp-content/uploads/2016/03/pint.png";
-  imgList["ref6"]["over"] = "http://adrenalynmapp.com/news/wp-content/uploads/2016/03/pint-hover.png";
+  imgList["ref1"]["out"] = "./assets/images/social/fb.png";
+  imgList["ref1"]["over"] = "./assets/images/social/fb-hover.png";
+  imgList["ref2"]["out"] = "./assets/images/social/gp.png";
+  imgList["ref2"]["over"] = "./assets/images/social/gp-hover.png";
+  imgList["ref3"]["out"] = "./assets/images/social/tw.png";
+  imgList["ref3"]["over"] = "./assets/images/social/tw-hover.png";
+  imgList["ref4"]["out"] = "./assets/images/social/inst.png";
+  imgList["ref4"]["over"] = "./assets/images/social/inst-hover.png"; 
+  imgList["ref5"]["out"] = "./assets/images/social/ln.png";
+  imgList["ref5"]["over"] = "./assets/images/social/ln-hover.png";
+  imgList["ref6"]["out"] = "./assets/images/social/pint.png";
+  imgList["ref6"]["over"] = "./assets/images/social/pint-hover.png";
 
  
  

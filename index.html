@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="rs">
 <head>
-	<title>Moj let</title>
+	<title key="" class="tr">Moj let</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/stysle.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- Important Owl stylesheet -->
 	<link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css">
 	<!-- Default Theme -->
 	<link rel="stylesheet" href="assets/owl-carousel/owl.theme.css">
 	<link rel="stylesheet" href="assets/css/scroll.css">
-
 </head>
 <body style="background:white;">
 
 <div class="container-fluid fullwidth">
 	<div class="row fullwidth">
 		<div class="col-md-12">
-	        <nav id='navigation' class="navbar navbar-fixed-top navbar-static-top nav-li-padd-before nav-spec ">
+	       
+	       
+
+ <nav id='navigation' class="navbar navbar-fixed-top navbar-static-top nav-li-padd-before nav-spec ">
+
 					<div class="container pagination-centered">
 				        <div class="navbar-header pagination-centered" style="">
-				          <li class="logo-holder hidden-xs hidden-sm  ">
+				          <div class="logo-holder hidden-xs hidden-sm  ">
 				                   <img src="./assets/images/mojlet-logo.png" id="logo"  /> 
-			                    </li>
+			                    </div>
 				          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 				           	<img src="./assets/images/mojlet-logo.png" id='logo-small'  alt="" title="" />
 				          </button>
@@ -32,10 +35,17 @@
 				        <div id="navbar" class="padding-no collapse navbar-collapse ">
 				        	<ul class="nav navbar-nav">
 				            	
-			                    <li class=""><a class="page-scroll" href="#about">About</a></li>
-			                	<li class=""><a class="page-scroll" href="#gallery">Gallery</a></li>
-			                    <li class="scrollcheck "><a class="page-scroll" href="#book">Book</a></li>
-			                    <li class=""><a class="page-scroll" href="#sponsors" >Sponsors</a></li>
+			                    <li class=""><a  key="about" class="tr page-scroll" href="#about">About</a></li>
+			                	<li class=""><a  key="gallery" class="tr page-scroll" href="#gallery">Gallery</a></li>
+			                    <li class="scrollcheck "><a  key="book" class="tr page-scroll" href="#book">Book</a></li>
+			                    <li class=""><a  key="sponsors" class="tr page-scroll" href="#sponsors" >Sponsors</a></li>
+			                    <li class="lang_switcher">
+
+					                <button id="en" class="langs">EN</button>
+
+					                <button id="sr" class="langs">RS</button>
+
+					            </li>
 			                </ul>
 				        </div>
 		      </div>
@@ -53,9 +63,10 @@
 			
 <div id="mycarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
+  <!-- <iframe width="100%" height="500" src="http://www.ytcropper.com/embed/K6570f96482eb03/loop/autoplay/" frameborder="0" allowfullscreen></iframe> -->
   <div class="explore-items">
   	<div class="explore-text">
-        <h2>Explore more</h2>
+        <h2 key="explore" class="tr" >Explore more</h2>
    	</div>
    	<div class="explore">
    		<img src="./assets/images/explore.png" class="center-block" />
@@ -72,16 +83,6 @@
     
    
   </div>
-
-  <!-- Controls -->
-  <!-- <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a> -->
 </div>
 
 			</div>
@@ -96,7 +97,7 @@
 
 			<div class="row">
 				<div class="col-md-12">
-					<h2>Fly with <br/> Petar Loncar</h2>
+					<h2 key="" class="tr" >Fly with <br/><span key="" class="tr" > Petar Loncar</span></h2>
 				</div>
 			</div>
 			<div class="box">
@@ -107,8 +108,23 @@
 					
 
 					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
-						<div  class="btn-about">ABOUT PETAR</div>
-						<p>Lorrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem <br><br>impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum <br><br>orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orremaa.</p>
+						<div  key="about_button" class="tr btn-about">ABOUT PETAR</div>
+						<p key="about_text_1" class="tr" >
+Petar Loncar is proud to call himself the first professional Serbian
+acro paraglider. Since he was born, he was interested in sports and at
+18 years old, he joined the parachute military unit so that he could
+train in the skies. </p>
+<p key="about_text_2" class="tr" >
+In Serbia there was virtually no acrobatic flying scene, but after his
+first live acrobatic flying encounter in 2007, Petar was inspired. He
+went on to perfect some of the most difficult tricks in acro
+paragliding, including infinity tumbling, which grabbed the attention
+of acrobatic flyers around the world.</p> 
+
+<p key="about_text_3" class="tr" >
+In the years that followed, Petar continued to compete in the world
+acro cups and aero events, perfecting his skills on expeditions and
+projects around the world. </p>
 					</div>
 
 				</div>
@@ -124,67 +140,67 @@
 		<div class="row">
 			
             <div class="col-lg-12">
-                <h2>Photo Gallery</h2>
+                <h2 key="gallery_title" class="tr" >Photo Gallery</h2>
             </div>
 
             <div class="col-lg-2 col-md-2 col-xs-6 thumb">
                 <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://placehold.it/300x200" alt="">
+                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2013/08/IMG_4255_1.jpg" alt="">
                 </a>
             </div>
-            <div class="col-lg-2 data-toggle="modal" data-target="#lightbox" col-md-2 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/300x200" alt="">
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-2 col-xs-6 thumb">
-                <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://placehold.it/300x200" alt="">
+            <div class="col-lg-2  col-md-2 col-xs-6 thumb">
+                <a class="thumbnail"  data-toggle="modal" data-target="#lightbox" href="#">
+                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2013/08/IMG_4218_1.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-2 col-md-2 col-xs-6 thumb">
                 <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://placehold.it/300x200" alt="">
+                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2013/08/Veso-morning.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-2 col-md-2 col-xs-6 thumb">
                 <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://placehold.it/300x200" alt="">
+                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2016/04/IMG_7648.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-2 col-md-2 col-xs-6 thumb">
                 <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://placehold.it/300x200" alt="">
+                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2015/09/DSC03236-e1443103927132.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-2 col-md-2 col-xs-6 thumb">
                 <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://placehold.it/300x200" alt="">
+                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2015/09/GOPR6220-e1443104126856.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-2 col-md-2 col-xs-6 thumb">
                 <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://placehold.it/300x200" alt="">
+                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2015/09/Screen-Shot-2015-07-31-at-4.42.59-PM-e1443104189738.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-6 thumb">
+                <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
+                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2015/09/Screen-Shot-2015-07-13-at-1.05.20-PM-e1443104160895.jpg" alt="">
                 </a>
             </div>
               <div class="col-lg-2 col-md-2 col-xs-6 thumb">
                 <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://placehold.it/300x200" alt="">
+                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2013/08/sol-web.jpgj_.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-2 col-md-2 col-xs-6 thumb">
                 <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://placehold.it/300x200" alt="">
+                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2013/08/IMG_4218_1.jpg" alt="">
                 </a>
             </div>
               <div class="col-lg-2 col-md-2 col-xs-6 thumb">
                 <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://placehold.it/300x200" alt="">
+                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2013/07/GOPR7490.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-2 col-md-2 col-xs-6 thumb">
                 <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://placehold.it/300x200" alt="">
+                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2013/07/gerlitzen.jpg" alt="">
                 </a>
             </div>
           
@@ -209,13 +225,13 @@
 	<div class="book">
 			<div class="row">
 					<div class="col-md-12">
-						<h2>Book a flight</h2>
+						<h2 key="book_title" class="tr" >Book a flight</h2>
 					</div>
 				</div>
 			<div class="box">
 				<div class="row pull-right">
 					<div class="col-md-12 ">
-						<img src="./assets/images/contact-bg.png" class="img-responsive" />
+						<img src="./assets/images/clouds.png" class="cloud img-responsive" />
 						<!-- <div class="box-bg "></div> -->
 					</div>
 				</div>
@@ -226,36 +242,43 @@
 				<div class="row">
 					<div class="col-xs-12 hidden-sm hidden-md hidden-lg">
 						<div class="content-about">
-							<div class="btn-about">How does it work?</div>
-							<p>Lorrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem <br><br>impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum <br><br>orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum </p>
+							<div class="btn-about tr" key="work_button" >How does it work?</div>
+							<p key="work_text_1" class="tr" >Lorrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem </p>
+
+							<p key="work_text_2" class="tr" >impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum</p>
+
+							<p key="work_text_3" class="tr" >orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum </p>
 						</div>
 					</div>
 					<div class="col-sm-5 col-md-5 col-lg-5">
 
 						<form role="form">
 						  <div class="form-group">
-						    <input type="email" class="form-control" placeholder="First name" id="email">
+						    <input type="email" key="firstName" class="ts form-control" placeholder="First name" id="email">
 						  </div>
 						  <div class="form-group">
-						    <input type="password" class="form-control" placeholder="Last name" id="pwd">
+						    <input type="password" key="lastName" class="ts form-control" placeholder="Last name" id="pwd">
 						  </div>
 						    <div class="form-group">
-						    <input type="email" class="form-control" placeholder="E-mail address" id="email">
+						    <input type="email" key="email" class="ts form-control" placeholder="E-mail address" id="email">
 						  </div>
 						  <div class="form-group">
-						    <input type="password" class="form-control" placeholder="Phone number" id="pwd">
+						    <input type="text" key="phone" class="ts form-control" placeholder="Phone number" id="pwd">
 						  </div>
 						  <div class="form-group">
-						    <select class="form-control"  ><option>Sport interested in</option></select>
+						    <select class="form-control"  ><option  key="select" class="tr" >Sport interested in</option></select>
 						  </div>
-						  <button type="submit" class="btn btn-about">Submit</button>
+						  <button type="submit" key="form_button" class="btn btn-about tr">Submit</button>
 						</form>
 
 					</div>
 					<div class="hidden-xs col-sm-7 col-md-7 col-lg-7">
 						<div class="content-about">
-							<div class="btn-about">How does it work?</div>
-							<p>Lorrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem <br><br>impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum <br><br>orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum </p>
+							<div class="tr btn-about " key="book_button" >How does it work?</div>
+							<p key="work_text_1" class="tr" >Lorrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem </p>
+							<p key="work_text_2" class="tr" >impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum </p>
+
+							<p key="work_text_3" class="tr" >orrem impsum orrem impsum orrem impsum orrem impsum orrem impsum </p>
 						</div>
 					</div>
 				</div>
@@ -271,25 +294,25 @@
 		<div class="row fullwidth row-centered">
 
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h2>Sponsors</h2>
+                <h2 key="sponsors" class="tr" >Sponsors</h2>
             </div>
 
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div id="sponsors-carousel" class="owl-carousel">
 			      	<div>				   
-					  	<img src="./assets/images/sponsors.png" width="150" />
+					  	<img src="./assets/images/sponsors/redbul.png" width="150" />
 			      	</div>
 			      	<div>				   
-					  	<img src="./assets/images/sponsors.png" width="150" />
+					  	<img src="./assets/images/sponsors/uturn.png" width="150" />
+			      	</div>
+			      	<div style="width:100px;">				   
+<!-- 					  	<img src="./assets/images/sponsors/dcube.png" width="150" />
+ -->			      	</div>
+			      	<div>				   
+					  	<img src="./assets/images/sponsors/vss.png" width="150" />
 			      	</div>
 			      	<div>				   
-					  	<img src="./assets/images/sponsors.png" width="150" />
-			      	</div>
-			      	<div>				   
-					  	<img src="./assets/images/sponsors.png" width="150" />
-			      	</div>
-			      		<div>				   
-					  	<img src="./assets/images/sponsors.png" width="150" />
+					  	<img src="http://digitalcube.rs/img/digitalcube.png" width="150" />
 			      	</div>
 			      
 	      		</div>
@@ -309,17 +332,17 @@
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<div class="f-info">
 					
-					<h4>Lorem ipsum</h4>
+					<h4 key="footer_title" class="tr" >Lorem ipsum</h4>
 
 					<div class="text">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id luctus sapien. Suspendisse varius viverra urna, id laoreet sapien pretium non. Nam at mauris ultrices, efficitur urna in, fermentum velit.
+						<p key="footer_text_1" class="tr" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id luctus sapien. Suspendisse varius viverra urna, id laoreet sapien pretium non. Nam at mauris ultrices, efficitur urna in, fermentum velit.
 						</p>	
-						<p>
+						<p key="footer_text_2" class="tr" >
 						 Nunc consequat tortor commodo enim vestibulum pellentesque vestibulum sed dui. 
 						</p>
 					</div>
  					
- 					<span>mojlet.rs</span>
+ 					<span key="site" class="tr" >mojlet.rs</span>
 				</div>							
 
 			</div>
@@ -330,7 +353,7 @@
 			</div>
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<div class="social">
-					<h4>Follow us on these networks</h4>
+					<h4 key="icon_title" class="tr" >Follow us on these networks</h4>
 
 					<div class="icons">
 						<img class='img' src="" id="ref1" />
@@ -342,8 +365,8 @@
 
 					</div>
 					<div class="soc-text">
-						<span>Or write to us at</span>
-						<span>office@mojlet.rs</span>
+						<span key="icon_text" class="tr" >Or write to us at</span>
+						<span key="icon_email" class="tr" >office@mojlet.rs</span>
 					</div>	
 				</div>
 			</div>
@@ -356,280 +379,14 @@
 <script src="./assets/js/jquery.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
 
-<script type="text/javascript">
-
-
-$(document).ready(function() {
-
-var width = $(window).width();
-		if(width > 768 && width <= 991){
-resize_img(width)
-
-}
-
-$(window).resize(function() {
-	var width = $(window).width();
-	resize_img(width)
-});
-
-function resize_img(width){
-		if(width > 768 && width <= 991){
-			$('#about_image').attr('src','./assets/images/petar-full.png');
-		}else{
-			$('#about_image').attr('src','./assets/images/petar-about.png');
-
-		}
-	}
-});
-</script>
-<style type="text/css">
-
-
-.explore-items{
-	position: absolute;
-    bottom: -30px;
-    left: 50%;
-    z-index: 15;
-    width: 60%;
-    padding-left: 0;
-    margin-left: -30%;
-    text-align: center;
-    list-style: none;
-    color:white;
-
-}
-
-.explore-text,.explore{}
-.content-about{font-weight:300;padding: 0 30px;}
-.social{font-weight:300;}
-.f-info span{display: block;padding-top: 12px;}
-.explore-text h3{margin-top: 100px;}
-.f-info h4,.f-info span,.explore-text h2{font-weight:200;text-transform: uppercase;}
-.f-info .text{padding-top:20px;}
-.f-logo{padding-top: 10px;}
-.f-info .text,.f-info h4,.f-info span{font-weight:200;color:white;}
-.thumbnail{padding:3px;border: 1px solid #23527c;}
-.social, .f-info{padding-top: 100px;}
-.social img , .social  h4{font-weight:200;padding-left: 10px;}
-.soc-text{padding-top: 100px; }
-.soc-text span{display: block;}
-.social h4,.social .soc-text{text-transform: uppercase;color:white;padding-bottom: 30px;}
-.about, .gallery, .book, .sponsors{
-	font-weight:300;
-	margin-top:100px;
-	height: auto;
-	text-align:
-	center;
-}
-.about h2, .gallery h2, .book h2,.sponsors h2{
-	text-transform: uppercase;
-	color: #2c465d;
-	margin-bottom: 30px;
-	font-weight: 300;
-	 text-align: center; font-size: 3em; z-index: 2;position: relative;}
-	
-
-	.book .box-bg{
-		background: url('./assets/images/contact-bg.png');
-		background-repeat: no-repeat;
-		z-index: 2;
-		width:340px;
-		height:100px;
-		position:relative;
-	}
-
-	.about .box{padding:40px;}
-	.about .box,.book .box{ background: #ee8532; text-align: left; color:white;}
-	.about .box img{
-		width: 415px;
-		position: absolute;
-		z-index: 1;
-	}  
-	@media screen and (min-width: 1200px){
-		.about .box img{
-			top: -228px;left:-5px;
-		}
-		form{padding:100px 0px 30px 70px}
-		.soc-text{padding-left:200px;}
-
-	} 
-	@media screen and (min-width: 991px) and (max-width: 1200px){
-		.about .box img{
-			top: -98px;left:-5px;
-		}
-		form{padding:100px 0px 30px 70px}
-		.soc-text{padding-left:150px;}
-	}
-	@media screen and (min-width: 768px) and (max-width: 991px){
-		.about .box img{
-			top: 35px;left:-5px;
-		}
-		form{padding:100px 0px 30px 70px}
-
-		.soc-text{padding-left:80px;}
-
-	}  
-	@media screen and (min-width: 240px) and (max-width: 768px){
-		.about .box img{
-			top: 35px;left:-5px;
-		}
-		form{padding:100px 70px 30px 70px}
-		.sponsors{margin-top: 400px;}
-		#about_image{
-			//display: none;
-		}
-	}  
-
-	 .box p{padding:25px 0 0 0px; font-size: 1.4em;}
-	.btn-about{ text-transform: uppercase;padding:5px 10px;background:  #2c465d; text-align: left; color:white;}
-	.about .btn-about {width:120px; }
-	.book .btn-about {width:170px; }
-	//a:hover, .btn-about {width:100px;color:white; }
-	.video{ height: 1000px; background-image:url('./assets/images/header-1.png'); background-size: cover;}
-	.gallery{height: 400px; background-color: white;}
-	.sponsors{ height:300px;}
-	.book{ height: 550px; }
-	.book p{padding-bottom: 50px;}
-	.footer{min-height: 500px; background-color: #2d485d;}
-	.bord-top{width:100%;background-image:url('./assets/images/footer-bg.png'); height: 140px;background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    top: 5px;
-    margin: 0px auto 0 auto;
-    position: relative;
-    z-index: 99;
-    clear: both;}
-	.fullwidth {padding:0!important;margin:0!important;}
-	#logo, #logo-small{margin-top:10px; }
-
-
-	/* Navigation */
-	.navbar .navbar-nav {
-	  display: inline-block;
-	  float: none;
-	  vertical-align: top;}
-	  .nav-spec{color: #2c465d; background: rgba(255, 255, 255, 0.69);}
-	  /*background: rgba(238, 133, 50, 0.99)*/
-	  .navbar-toggle {
-		  width: 100%;
-		  float: none;
-		  margin-right: 0;
-			}
-	.navbar .navbar-collapse {text-align: right;}
-	.nav {
-	  list-style: none;
-	  padding: 0;
-	  margin: 0 auto;
-	  opacity: 1;
-	  -moz-transition: opacity 1000ms ease-in-out 3800ms;
-	  -o-transition: opacity 1000ms ease-in-out 3800ms;
-	  -webkit-transition: opacity 1000ms ease-in-out 3800ms;
-	  transition: opacity 1000ms ease-in-out 3800ms; }
-	.nav:before, .nav:after {
-	    content: " ";
-	    display: table; }
-  	.nav:after{clear: both; }
-  	/*.nav li {
-    	float: left;
-    	position: relative; }*/
-      
-    .nav li a{
-      font-size: 1.6em;
-      padding-top:30px;
-      opacity: 0.9;
-      color: #2c465d;
-      text-decoration: none;
-      text-transform: uppercase; }
-    
-  	.nav.hidden {opacity: 0;}
-	.polygons-holder{
-		position:relative;
-		top:0px;}
-	.nav li a:hover, {
-    font-size: 14px;
-    opacity: 0.9;
-    color: #666;
-    background:white;
-    text-decoration: none;
-    border-bottom: 2px solid #f7921e;
-}
-.nav>li>a:focus, .nav>li>a:hover {
-    text-decoration: none;
-    background-color: transparent;
-}
-.active{
-  font-size: 14px;
-    opacity: 0.9;
-    color: #666;
-    background:transparent;
-    text-decoration: none;
-    border-bottom: 2px solid #f7921e;
-}
-.navbar-toggle{
-  position:relative;
-  float:right;
-  
-  background-color:transparent;
-  background-image:none;
-  border:1px solid transparent;
-  border-radius:4px}
-
-#lightbox .modal-content {
-    display: inline-block;
-    text-align: center;   
-}
-
-#lightbox .close {
-    opacity: 1;
-    color: rgb(255, 255, 255);
-    background-color: rgb(25, 25, 25);
-    padding: 5px 8px;
-    border-radius: 30px;
-    border: 2px solid rgb(255, 255, 255);
-    position: absolute;
-    top: -15px;
-    right: -55px;
-    
-    z-index:1032;
-}
-</style>
-
 <script src="./assets/js/social.js"></script>
 
 <script src="./assets/owl-carousel/owl.carousel.js"></script>
 <script src="./assets/owl-carousel/owl.carousel.min.js"></script>
 <script src="./assets/js/easy-scroll.js"></script>
+<script src="./assets/js/scripts.js"></script>
+<script src="./assets/lang/languages.js"></script>
 
 
-<script>
-$(document).ready(function() {
-	  $("#sponsors-carousel").owlCarousel({items : 5});
-});
-$(document).ready(function() {
-    var $lightbox = $('#lightbox');
-    
-    $('[data-target="#lightbox"]').on('click', function(event) {
-        var $img = $(this).find('img'), 
-            src = $img.attr('src'),
-            alt = $img.attr('alt'),
-            css = {
-                'maxWidth': $(window).width() - 100,
-                'maxHeight': $(window).height() - 100
-            };
-    
-        $lightbox.find('.close').addClass('hidden');
-        $lightbox.find('img').attr('src', src);
-        $lightbox.find('img').attr('alt', alt);
-        $lightbox.find('img').css(css);
-    });
-    
-    $lightbox.on('shown.bs.modal', function (e) {
-        var $img = $lightbox.find('img');
-            
-        $lightbox.find('.modal-dialog').css({'width': $img.width()});
-        $lightbox.find('.close').removeClass('hidden');
-    });
-});
-</script>
 </body>
 </html>
