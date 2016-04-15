@@ -44,7 +44,7 @@
   
 
   .book .box-bg{
-    background: url('./assets/images/contact-bg.png');
+    background: url('../images/contact-bg.png');
     background-repeat: no-repeat;
     z-index: 2;
     width:340px;
@@ -99,13 +99,13 @@
   .about .btn-about {width:120px; text-align: center;}
   .book .btn-about {width:170px; color:white; }
   //.btn-about:hover, .btn-about {width:100%;color:white; }
-  .video{ height: 1000px; background-image:url('./assets/images/header-1.png'); background-size: cover;}
+  .video{ height: 1000px; background-image:url('../images/header-1.png'); background-size: cover;}
   .gallery{height: 400px; background-color: white;}
   .sponsors{ height:300px;}
   .book{ height: 550px; }
   .book p{padding-bottom: 50px;}
-  .footer{min-height: 500px; background-color: #2d485d;}
-  .bord-top{width:100%;background-image:url('./assets/images/footer-bg.png'); height: 140px;background-repeat: no-repeat;
+  .footer{min-height: 500px; background-color: #2D475C;}
+  .bord-top{width:100%;background-image:url('../images/footer-bg.png'); height: 140px;background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
     top: 5px;

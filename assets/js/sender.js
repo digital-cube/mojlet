@@ -1,38 +1,9 @@
 $(document).ready(function() {
     $('#sendmessage').on('click', function() {
         submitForm(); // To prevent following the link (optional)
+      alert('mladen');
       }); 
-    var activeSubscribe;
-    var subscriber ='<form>'+
-                    '<div class="form-group">'+
-                    '<div style="color:white;" id="subscribe-info"></div>'+
-                    '<input type="email" class="form-control" placeholder="Please enter your email" id="subsemail"/>'+
-                    '<input type="hidden" id="project_id" />'+
-                    '</div>'+
-                    '<div id="subscribe"  class="btn  pull-right btn-default">Subscribe</div>'+
-                    '</form>';
-
-    $('.subscribe-box').html(subscriber);
-    $('.subscribe-box').hide();
-
-    $('.read_more').on('click', function(){
-
-        var id_project = $(this).attr('id');
-        var project_id  = $('#project_id').val(id_project);
-        $('.subscribe-box').fadeIn();
-        activeSubscribe = true;
-    });
-
-    $('#subscribe').on('click', function() {
-        
-        subscribeForm();
-
-    });  		
-    // $('desctop').on('click', function(){
-    //     if(activeSubscribe){    $('.subscribe-box').fadeOut();}
-
-    // });
-	function addText(text){
+    function addText(text){
     	$( "#info" ).html( text ).css('margin-top','-40px').css('padding','10px 0px');
     }
     function submitForm(){
@@ -42,37 +13,34 @@ $(document).ready(function() {
         var email = $("#email").val();
         var phone = $("#phone").val();
         var interested = $("#interested").val();
-        
-        if(name == '' && email=='' && interested == ''){
+
+        if(firstName == '' && email=='' && lastName==''){
         	addText("Empty fields.")
-        }else if(name==''){
-        	addText("Name is empty.");
-        	$('#name').focus();
+        }else if(firstName==''){
+        	addText("First name is empty.");
+
+        }else if(lastName==''){
+        	addText("Last name is empty.");
 
         }else if(email==''){
         	addText("Email is empty.");
-        	$('#email').focus();
-
-        }else if(interested==''){
-        	addText("Message is empty.");
-        	$('#message').focus();
 
         }else if( !isValidEmailAddress( email ) ) {
         	addText("Email is not corect.");
-        	$('#email').focus();
 
         }else{
             //http://digitalcube.rs/econtact/contact
-    	    $.ajax({
-    	        type: "PUT",
-                url: "http://localhost:9885/econtact/contact",
-    	        data: {
+            var params = {
                     firstName:firstName,
                     lastName:lastName,
-    				email:email,
-                    phone:phone,
-    				interested:interested
-    	        },
+                    phone:phone
+                }
+            var msg='message'
+    	    $.ajax({
+    	        type: "PUT",
+                url: "http://digitalcube.rs/econtact/contact",
+    	        data: {data:JSON.stringify(params),email:email,mailmsg:msg},
+                    
     	        success : function(text){
       					addText("Thank you, we will soon contact you.");           
     	        },
@@ -81,6 +49,8 @@ $(document).ready(function() {
 
     				},
     	    });
+                                console.log(params,email,msg);
+
     	}
     }
 
