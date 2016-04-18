@@ -24,7 +24,7 @@
 
 					<div class="container pagination-centered">
 				        <div class="navbar-header pagination-centered" style="">
-				          <div class="logo-holder hidden-xs hidden-sm  ">
+				          <div class="logo-holder hidden-xs   ">
 				                   <img src="./assets/images/mojlet-logo.png" id="logo"  /> 
 			                    </div>
 				          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -41,9 +41,10 @@
 			                    <li class=""><a  key="sponsors" class="tr page-scroll" href="#sponsors" >Sponsors</a></li>
 			                    <li class="lang_switcher">
 
-					                <button id="en" class="langs">EN</button>
+					                <span id="en" class="langs">EN</span>
+					                |
 
-					                <button id="sr" class="langs">RS</button>
+					                <span id="sr" class="langs">RS</span>
 
 					            </li>
 			                </ul>
@@ -55,15 +56,45 @@
 				    
 	    </div>
 	</div>
+<!-- video -->
+<style>
+ #bg{
+  width:100%;
+  height:600px;
+  overflow:hidden;
+}
+#bg_container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
 
-
+ <div id="bg">
+ <div id="bg_container">
+  <iframe class="video" width="100%" src="https://www.youtube.com/embed/Yy6GvaHVl4Q?autoplay=1&amp;controls=false&amp;loop=1&amp;rel=0" frameborder="0"></iframe>
+</div></div>
+<!--kraj slidera-->
 	<div class="">
 		<div class="col-md-12 " style="padding:0!important;">
 			<div class="">
-			
-<div id="mycarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <!-- <iframe width="100%" height="500" src="http://www.ytcropper.com/embed/K6570f96482eb03/loop/autoplay/" frameborder="0" allowfullscreen></iframe> -->
+
+
+
+		<!-- <video autoplay loop muted>
+      	  <source src="http://demosthenes.info/assets/videos/polina.webm" type="video/webm">
+       	 <source src="http://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+        </video> -->
+  <!-- <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/v/Yy6GvaHVl4Q',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
+ -->
   <div class="explore-items">
   	<div class="explore-text">
         <h2 key="explore" class="tr" >Explore more</h2>
@@ -78,12 +109,11 @@
   <div class="carousel-inner" role="listbox">
     
     <div class="item active">
-      <img src="./assets/images/header-1.png" width="100%" data-color="lightgreen" alt="Fourth Image">    
-    </div>
+<!--       <img src="./assets/images/header-1.png" width="100%" data-color="lightgreen" alt="Fourth Image">    
+ -->    </div>
     
    
   </div>
-</div>
 
 			</div>
 		</div>
@@ -133,90 +163,26 @@ projects around the world. </p>
 	</div>
 <!-- End about section -->
 
-
+<div id="overlay"></div>
+<div id="overlayContent">
+    <img id="imgBig" src="" alt="" width="70%" />
+</div>
 <!-- Gallery section -->
 <div class="container" id="gallery">
 	<div class="gallery">	
 		<div class="row">
 			
+
             <div class="col-lg-12">
                 <h2 key="gallery_title" class="tr" >Photo Gallery</h2>
             </div>
 
-            <div class="col-lg-2 col-md-2 col-xs-6 thumb">
-                <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2013/08/IMG_4255_1.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-2  col-md-2 col-xs-6 thumb">
-                <a class="thumbnail"  data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2013/08/IMG_4218_1.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-2 col-xs-6 thumb">
-                <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2013/08/Veso-morning.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-2 col-xs-6 thumb">
-                <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2016/04/IMG_7648.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-2 col-xs-6 thumb">
-                <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2015/09/DSC03236-e1443103927132.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-2 col-xs-6 thumb">
-                <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2015/09/GOPR6220-e1443104126856.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-2 col-xs-6 thumb">
-                <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2015/09/Screen-Shot-2015-07-31-at-4.42.59-PM-e1443104189738.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-2 col-xs-6 thumb">
-                <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2015/09/Screen-Shot-2015-07-13-at-1.05.20-PM-e1443104160895.jpg" alt="">
-                </a>
-            </div>
-              <div class="col-lg-2 col-md-2 col-xs-6 thumb">
-                <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2013/08/sol-web.jpgj_.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-2 col-xs-6 thumb">
-                <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2013/08/IMG_4218_1.jpg" alt="">
-                </a>
-            </div>
-              <div class="col-lg-2 col-md-2 col-xs-6 thumb">
-                <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2013/07/GOPR7490.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-2 col-xs-6 thumb">
-                <a class="thumbnail" data-toggle="modal" data-target="#lightbox" href="#">
-                    <img class="img-responsive" src="http://petarloncar.com/wp-content/uploads/2013/07/gerlitzen.jpg" alt="">
-                </a>
-            </div>
-          
+            <div id="gallery-holder"></div>             	
+
         </div>
 	</div>
 </div>
-<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
-        <div class="modal-content">
-            <div class="modal-body">
-                <img src="" alt="" />
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- End gallery section -->
 
 
@@ -305,9 +271,7 @@ projects around the world. </p>
 			      	<div>				   
 					  	<img src="./assets/images/sponsors/uturn.png" width="150" />
 			      	</div>
-			      	<div style="width:100px;">				   
-<!-- 					  	<img src="./assets/images/sponsors/dcube.png" width="150" />
- -->			      	</div>
+			      
 			      	<div>				   
 					  	<img src="./assets/images/sponsors/vss.png" width="150" />
 			      	</div>
@@ -378,11 +342,11 @@ projects around the world. </p>
 	
 <script src="./assets/js/jquery.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
-
-<script src="./assets/js/social.js"></script>
-
 <script src="./assets/owl-carousel/owl.carousel.js"></script>
 <script src="./assets/owl-carousel/owl.carousel.min.js"></script>
+<script src="./assets/js/social.js"></script>
+
+
 <script src="./assets/js/easy-scroll.js"></script>
 <script src="./assets/js/nav-scroll.js"></script>
 <script src="./assets/js/scripts.js"></script>
