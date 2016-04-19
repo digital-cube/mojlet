@@ -1,4 +1,5 @@
 
+
   #overlay{
     position: fixed; 
     width: 100%; 
@@ -29,6 +30,8 @@
 
 #imgBig, #imgSmall{
     cursor: pointer;
+}
+#imgBig{background-color:white;     padding:5px;
 }
 .explore-items{
   position: absolute;
@@ -94,6 +97,8 @@
     .about .box img{
       top: -212px;left:-5px;
     }
+  #bg {height:600px;}
+
     form{padding:100px 0px 30px 50px}
     .soc-text{padding-left:200px;}
 
@@ -102,6 +107,8 @@
     .about .box img{
       top: -109px;left:-5px;
     }
+      #bg {height:500px;}
+
     form{padding:100px 0px 30px 50px}
     .soc-text{padding-left:150px;}
   }
@@ -109,6 +116,9 @@
     .about .box img{
       top: 24px;left:-5px;
     }
+          #bg {height:400px;}
+
+    .nav-spec{background: white;}
     form{padding:100px 0px 30px 50px}
 
     .soc-text{padding-left:80px;}
@@ -118,6 +128,9 @@
     .about .box img{
       top: 35px;left:-5px;
     }
+    .nav-spec{background: white;}
+          #bg {margin-top: 120px;}
+
     form{padding:100px 35px 30px 35px}
     .sponsors{margin-top: 400px;}
     #about_image{

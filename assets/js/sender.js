@@ -1,7 +1,6 @@
 $(document).ready(function() {
     $('#sendmessage').on('click', function() {
         submitForm(); // To prevent following the link (optional)
-      alert('mladen');
       }); 
     function addText(text){
     	$( "#info" ).html( text ).css('margin-top','-40px').css('padding','10px 0px');

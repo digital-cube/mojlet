@@ -59,10 +59,26 @@
 <!-- video -->
 <style>
  #bg{
-  width:100%;
-  height:600px;
-  overflow:hidden;
+  	width:100%;
+/*  height:600px;
+*/  overflow:hidden;
+	position: relative;
+	/*background-image: url('./assets/images/pat.png');
+	background-size: cover;*/
+
+
 }
+
+#bg:after {
+    content: "";
+    background: url(./assets/images/pat.png) repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0.5;
+    }
 #bg_container {
     position: relative;
     width: 100%;
@@ -80,8 +96,11 @@
 
  <div id="bg">
  <div id="bg_container">
-  <iframe class="video" width="100%" src="https://www.youtube.com/embed/Yy6GvaHVl4Q?autoplay=1&amp;controls=false&amp;loop=1&amp;rel=0" frameborder="0"></iframe>
+
+
+  <iframe id="vid" class="video" width="100%" src="http://www.youtube.com/v/Q664M2lpTMc?vq=small&loop=1&autoplay=1&rel=0&showinfo=0&controls=0&volume=0&enablejsapi=1&playlist=Q664M2lpTMc" volume="0" autoplay frameborder="0"></iframe>
 </div></div>
+
 <!--kraj slidera-->
 	<div class="">
 		<div class="col-md-12 " style="padding:0!important;">

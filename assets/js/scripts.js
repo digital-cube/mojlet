@@ -78,7 +78,6 @@
 
  // Object.keys(imagesgall).forEach(function(img){  
             imagesgall.forEach(function(img){
-                //alert(img[1])
                 var galleryHolder =  '<div class="col-lg-2 col-md-2 col-xs-6 thumb">'+
                       '<a class="thumbnail" data-toggle="modal" data-target="#" href="#">'+
                       '<img class=" imgSmall img-responsive" data-id="'+img['bigUrl']+'" src="./assets/images/gall/'+img['smallUrl']+'" alt="">'+
@@ -127,6 +126,7 @@ function resize_img(width){
     }
 });
 $(document).ready(function() {
+   
       $("#sponsors-carousel").owlCarousel({items : 4,rewindNav : false, 
     pagination : false,  });
 });
