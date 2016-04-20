@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $('#sendmessage').on('click', function() {
-        submitForm(); // To prevent following the link (optional)
+        //submitForm(); // To prevent following the link (optional)
+        
       }); 
     function addText(text){
     	$( "#info" ).html( text ).css('margin-top','-40px').css('padding','10px 0px');
@@ -37,7 +38,7 @@ $(document).ready(function() {
             var msg='message'
     	    $.ajax({
     	        type: "PUT",
-                url: "http://digitalcube.rs/econtact/contact",
+                url: "#",
     	        data: {data:JSON.stringify(params),email:email,mailmsg:msg},
                     
     	        success : function(text){
