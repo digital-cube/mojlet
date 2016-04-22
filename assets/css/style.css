@@ -61,6 +61,7 @@
 .social img , .social  h4{font-weight:200;padding-left: 10px;}
 .soc-text{padding-top: 100px; }
 .soc-text span{display: block;}
+.soc-text a, .soc-text a:visited, .soc-text a:hover{text-decoration: none; color:white; }
 .social h4,.social .soc-text{text-transform: uppercase;color:white;padding-bottom: 30px;}
 .about, .gallery, .book, .sponsors{
   font-weight:300;

@@ -88,6 +88,16 @@
             
 $(document).ready(function() {
 
+//email add 
+        var email = 'mo' + 'jl' + 'et' +
+                    '@' + 'di' + 'gi' +
+                    'tal' + 'cube' + 
+                    '.' + 'rs';
+                    
+        $('#mail_append').html(email);
+        $('#mail_append').attr('href','mailto:'+email);
+
+//gallery add        
 $(".imgSmall").click(function(){    
     var takeSrc = $(this).attr('data-id');
     $("#imgBig").attr("src","./assets/images/gall/"+takeSrc);
