@@ -88,6 +88,19 @@
             
 $(document).ready(function() {
 
+
+    function onkeypress(){
+        $(document).on('keyup',function(evt) {
+            if (evt.keyCode == 27) {
+                $("#imgBig").attr("src", "");
+                $("#overlay").fadeOut();
+                $("#overlayContent").fadeOut();
+
+            }
+
+
+        });
+    }
 //email add 
         var email = 'mo' + 'jl' + 'et' +
                     '@' + 'di' + 'gi' +
@@ -98,7 +111,8 @@ $(document).ready(function() {
         $('#mail_append').attr('href','mailto:'+email);
 
 //gallery add        
-$(".imgSmall").click(function(){    
+$(".imgSmall").click(function(){
+    onkeypress()
     var takeSrc = $(this).attr('data-id');
     $("#imgBig").attr("src","./assets/images/gall/"+takeSrc);
     $("#overlay").fadeIn();
